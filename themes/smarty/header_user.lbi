@@ -1,0 +1,198 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>{$title}</title>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta property="qc:admins" content="15535460516551446375" />
+<meta property="wb:webmaster" content="e70aa9edb6c2ce88" />
+<meta http-equiv="window-target" content="_top" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="content-language" content="zh-cn"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="xcode-display" content="render" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=high-dpi" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="MSThemeCompatible" content="no" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="search" type="application/opensearchdescription+xml" href="" title="" />
+<link rel="icon" href="{$cssdomain2}/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="{$cssdomain2}/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{$cssdomain2}/favicon_ipad.png" type="image/png" />
+<link rel="apple-touch-icon-precomposed" href="{$cssdomain2}/favicon_ipad.png" type="image/png" />
+<link rel="canonical" href="" />
+<style type="text/css">
+    @import url({$cssdomain1}/css/global/reset.css?{$cssversion});
+	@import url({$cssdomain2}/css/global/base.css?{$cssversion});
+</style>
+<script type="text/javascript" src="{$cssdomain1}/js/public.js?{$jsversion}"></script>
+<script type="text/javascript">
+	void function(window,$){
+		try{
+			//设置公共变量 begin
+			window.config = {
+				dataJsVersion: Math.ceil({$nowtime} / 30)
+			};
+			//设置公共变量 end
+
+		}
+		catch(e){
+
+		}
+	}(this,jQuery);
+</script>
+<link type="text/css" rel="stylesheet" href="{$cssdomain1}/css/skins/info_v3/layout.css?{$cssversion}" />
+<script type="text/javascript" src="{$cssdomain1}/js/info_v2/jquery.plugins/jqfocus/jquery.focus.js?{$jsversion}"></script>
+<script type="text/javascript" src="{$cssdomain2}/js/info_v2/jquery.plugins/jqdialog/jquery.dialog.js?{$jsversion}"></script>
+<script type="text/javascript" src="{$cssdomain3}/js/info_v2/jquery.plugins/jqpicscroll/jquery.picscroll.js?{$jsversion}"></script>
+<script type="text/javascript" src="/js/record_referrer.js"></script>
+</head>
+<body>
+<div class="m_header">
+ <div id="m_toolbarWrap" class="m_toolbarWrap">
+  <div class="m_toolbar">
+		<div class="quickArea"><a href="javascript:addfavorite();" class="ico m_fav" title="收藏本站">收藏本站</a><span class="line">|</span>
+   <b class="ico m_ensure" title="品质保障">品质保障</b>
+   <b class="ico m_sale" title="无忧售后">无忧售后</b>
+   <!--<a href="#" class="ico m_app" title="手机版客户端">手机版客户端</a>--></div>
+    <ul class="m_toolbar_nav" id="Js_m_toolbar_nav">
+    <li class="item m_loginInfo"></li>
+    <li class="item m_account">
+     <div class="m_menu"><a href="{$domain_user}user.php" class="m_menu_hd m_login_url">我的星易家<b class="ico ico_drop"></b></a>
+    <ul class="m_menu_bd">
+ <li><a href="http://home.mmall.com/index.php?con=MallOrder&act=Index" class="m_login_url" title="">已购买商品</a></li>
+       <li><a href="http://home.mmall.com/index.php?con=goodsCollect&act=index" title="" class="m_login_url">我的收藏</a></li>
+      </ul>
+     </div>
+    </li>
+    <li class="item m_myOrder"><a href="http://home.mmall.com/index.php?con=MallOrder&act=Index" class="m_login_url" title="">我的订单</a></li>
+    <li class="item m_service">
+     <div class="m_menu"><a href="{$domain_www}service.html" class="m_menu_hd">客户服务<b class="ico ico_drop"></b></a>
+      <ul class="m_menu_bd">
+       <li><a href="{$domain_www}help/guide.html">帮助中心</a></li>
+       <li><a href="{$domain_home}index.php?con=MallRefund&act=list">售后管理</a></li>
+       <li><a class="serviceIM" href="javascript:;">在线客服</a></li>
+       <li><a href="{$domain_www}help/contact_service.html#area02">邮件客服</a></li>
+       <li><a href="{$domain_www}help/contact_service.html#area03">电话客服</a></li>
+       <li><a href="{$domain_www}help/contact_service.html#area05">微信客服</a></li>
+      </ul>
+     </div>
+    </li>
+	 <li class="item m_siteNav">
+     <div class="m_menu"><a href="{$domain_www}sitemap.html" class="m_menu_hd">网站导航<b class="ico ico_drop"></b></a>
+      <div class="m_menu_bd">
+       <dl>
+        <dt>购物</dt>
+        <dd>
+        	<a href="http://j.mmall.com/">精品惠</a>
+        	<a href="{$domain_jiaju}">家具城</a>
+        	<a href="{$domain_jiancai}">建材城</a>
+        	<a href="{$domain_ju}">家居城</a>
+        	<a href="{$domain_tuan}">现场团购</a>
+        </dd>
+       </dl>
+       <dl>
+        <dt>装修服务</dt>
+        <dd>
+        	<a href="{$domain_company}">找装修公司</a>
+        	<a href="{$domain_zxh}">装修攻略</a>
+        	<a href="{$domain_sheji}">找设计师</a>
+        	<a href="{$domain_zixun}">装修汇</a>
+        	<a href="{$domain_tu}">装修效果图</a>
+        	<a href="{$domain_gj}">装客管家</a>
+        </dd>
+       </dl>
+       <dl>
+        <dt>商家指南</dt>
+        <dd>
+        	<a href="{$domain_mai}">商户中心</a>
+        	<!--<a href="{$domain_www}topic_mall/join-in.html">商家入驻</a>-->
+        </dd>
+       </dl>
+       <dl>
+        <dt>客户服务</dt>
+        <dd><a href="{$domain_www}service.html">服务中心</a></dd>
+       </dl>
+      </div>
+     </div>
+    </li>
+    <li class="item m_tel"><strong class="ico ico_tel">4000-213-213</strong></li>
+   </ul>
+  </div>
+ </div>
+ <script type="text/javascript" defer="defer" async="async">
+	var username = $.cookie("ECS[user_name]") || $.cookie("ECS[login_name]") || $.cookie('auto_username');
+	var trends_data = {cart_count:0,trends:[],flash:[]};
+	void function(window, $){
+		if(username){
+			if(username.length > 20){
+				username = username.substr(0, 20) + '...';
+			}
+			$("#m_toolbarWrap .m_loginInfo").html('您好,星易家会员<span class="webtxt">'+ username +'</span>！<a href="javascript:location=\'{$domain_user}passport.php?act=logout&back_act=\' + encodeURIComponent(location)" class="loginOut" title="退出登录">退出登录</a>');
+		}else{
+			$("#m_toolbarWrap .m_loginInfo").html([
+				'您好,欢迎来星易家！<a href="javascript:location=\'{$domain_user}passport.php?act=login&back_act=\' + encodeURIComponent(location)" class="weblink">请登录/</a>',
+				'<a href="javascript:location=\'{$domain_user}passport.php?act=register&back_act=\' + encodeURIComponent(location)">注册</a>'
+			].join(''));
+			$(function(){
+				$('.m_login_url').each(function(){
+					$(this).attr('href', '{$domain_user}passport.php?act=login&back_act=' + encodeURIComponent($(this).attr('href')));
+				});
+			})
+		}
+		$('#Js_m_toolbar_nav .m_menu').hover(function(){
+			$(this).parents('.item').toggleClass('hover');
+		});
+	}(this, jQuery);
+ </script>
+    <script type="text/javascript" defer="defer" async="async">
+void function(window,$){
+		try{
+			$(function(){
+				$(document.body).attr("spellcheck","false");
+
+				//lazyload
+				$("img.lazyload").lazyload({effect:"fadeIn"});
+                $("a.serviceIM").each(function(){
+                    var userAgent = navigator.userAgent.toLowerCase();
+                    if(userAgent.indexOf("ipad") > -1){
+                    }
+                    else
+                    {
+                        if($.browser.msie && 
+                           parseInt($.browser.version) > 8){
+
+                           this.href = "http://chat.winvoice.cn/chat/ChatWin3.aspx?settings=mw7mXNmNXm66mbIwz3Am66mPb7z3Am66NNwI6mmIm";
+                           this.target = "_blank";
+                        }else{
+                            $(this).click(function(){
+                                var width = 698,
+                                    height = 521,
+                                    left = (screen.width - width) / 2,
+                                    top = (screen.height - height) / 2;
+
+                                window.open("http://chat.winvoice.cn/chat/ChatWin3.aspx?settings=mw7mXNmNXm66mbIwz3Am66mPb7z3Am66NNwI6mmIm", 
+                                            "_blank", 
+                                            "width=" + width + 
+                                            ",height=" + height + 
+                                            ",left=" + left + 
+                                            ",top=" + top);
+                                return false;
+                            });
+                        }			
+                    }
+                });
+
+			});
+		}
+		catch(e){
+
+		}
+	}(this,jQuery);
+</script>
+ <!--toolbar end-->

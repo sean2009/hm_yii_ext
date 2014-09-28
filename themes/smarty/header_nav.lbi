@@ -1,0 +1,260 @@
+<script type="text/javascript" src="/js/main.js?{$cssversion}"></script>
+﻿<!--floatNav start-->
+<div class="m_mainNavWrap">
+  <div class="m_mainNav">
+   <div class="m_category" id="Js_m_category">
+    <h2 class="m_category_hd"><i class="ico_arrow"></i></h2>
+    <div class="m_category_bd">
+     <ul class="m_category_bd_con">
+      <li id="m_furniture" class="m_category_item">
+       <h3 class="item-hd"><a href="{$domain_jiaju}" title="家具" class="ico_title">家具</a></h3>
+       <div class="item-colBox"></div>
+       <div class="m_sub_category">
+       	<ul class="m_subItemCon01">
+        </ul>
+        <ul class="m_subItemCon02">
+        </ul>
+        <div class="m_subItemCon03">
+         <div class="m_hotBrands">
+          <h3>促销品牌</h3>
+          <ul></ul>
+         </div>
+         <div class="m_introBrands">
+          <h3>推荐品牌</h3>
+          <p class="txt"></p>
+         </div>
+        </div>
+       </div>
+       <script type="text/javascript">
+		void function(window, $){
+			$('.m_category_hd').prepend(hmpage0.child.category.name);
+        	var item_html = [];
+        	$.each(hmpage0.child.category.child.furniture.data, function(i){
+        		if(i % 3 == 0) item_html.push('<p class="item-col">');
+        		item_html.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        		if((i+1) % 3 == 0){
+        			item_html.push('</p>');
+        			$('#m_furniture .item-colBox').append(item_html.join(''));
+        			item_html = [];
+        		}
+        	});
+        	var i = 0;
+        	$.each(hmpage0.child.category.child.furniture.child, function(){
+        		if(i > 8) return ;
+        		var html = ['<li class="subItem"><h3 class="subItem-hd">'+ this.name +'</h3><p class="subItem-col">'];
+        		$.each(this.data, function(){
+        			html.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        		});
+        		html.push('</p></li>');
+         		$('#m_furniture ' + (i < 5 ? '.m_subItemCon01' : '.m_subItemCon02')).append(html.join(''));
+         		i++;
+        	});
+        	$.each(hmpage0.child.category.child.furniture.child.brand_image.data, function(){
+        		$('#m_furniture .m_hotBrands ul').append('<li><a href="'+ this.cms_url +'" title="'+ this.title +'" target="_blank"><img src="'+ this.image_url +'" alt="'+ this.title +'"></a></li>');
+        	});
+        	$.each(hmpage0.child.category.child.furniture.child.brand_name.data, function(){
+        		$('#m_furniture .m_introBrands .txt').append('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        	});
+		}(this, jQuery);
+        </script>
+      </li>
+      <li id="m_material" class="item m_category_item">
+       <h3 class="item-hd"><a href="{$domain_jiancai}" title="建材" class="ico_title">建材</a></h3>
+       <div class="item-colBox"></div>
+       <div class="m_sub_category">
+        <ul class="m_subItemCon01"></ul>
+        <ul class="m_subItemCon02"></ul>
+        <div class="m_subItemCon03">
+         <ul></ul>
+         <div class="m_hotBrands">
+          <h3>促销品牌</h3>
+          <ul></ul>
+         </div>
+         <div class="m_introBrands">
+          <h3>推荐品牌</h3>
+          <p class="txt"></p>
+         </div>
+        </div>
+       </div>
+       <script type="text/javascript">
+		void function(window, $){
+        	var item_html = [];
+        	$.each(hmpage0.child.category.child.material.data, function(i){
+        		if(i % 3 == 0) item_html.push('<p class="item-col">');
+        		item_html.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        		if((i+1) % 3 == 0){
+        			item_html.push('</p>');
+        			$('#m_material .item-colBox').append(item_html.join(''));
+        			item_html = [];
+        		}
+        	});
+        	var i, j, hd = '', col = [], sub_html = [], merge = {4:3, 10:2, 12:3, 15:2};
+        	var ch = hmpage0.child.category.child.material.child;
+        	for(i=1; i<20;){
+        		sub_html.push('<li class="subItem"><h3 class="subItem-hd">');
+        		for(j=0; j<(merge[i] || 1); j++){
+        			hd += ch['arr'+(i+j)].name + ' ';
+        			col.push('<p class="subItem-col">');
+        			$.each(ch['arr'+(i+j)].data, function(){
+        				col.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        			});
+        			col.push('</p>');
+        		}
+        		sub_html.push(hd + '</h3>');
+        		$('#m_material ' + (i < 9 ? '.m_subItemCon01' : i < 19 ? '.m_subItemCon02' : '.m_subItemCon03 > ul')).append(sub_html.join('') + col.join('') + '</li>');
+        		i += j;
+        		hd = '';
+        		sub_html = [];
+        		col = [];
+        	}
+        	$.each(hmpage0.child.category.child.material.child.brand_image.data, function(){
+        		$('#m_material .m_hotBrands ul').append('<li><a href="'+ this.cms_url +'" title="'+ this.title +'" target="_blank"><img src="'+ this.image_url +'" alt="'+ this.title +'"></a></li>');
+        	});
+        	$.each(hmpage0.child.category.child.material.child.brand_name.data, function(){
+        		$('#m_material .m_introBrands .txt').append('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        	});
+		}(this, jQuery);
+        </script>
+      </li>
+      <li id="m_house" class="item m_category_item">
+       <h3 class="item-hd"><a href="{$domain_ju}" title="家居" class="ico_title">家居</a></h3>
+       <div class="item-colBox"></div>
+       <div class="m_sub_category">
+        <ul class="m_subItemCon01"></ul>
+        <ul class="m_subItemCon02"></ul>
+        <div class="m_subItemCon03">
+         <div class="m_hotBrands">
+          <h3>促销品牌</h3>
+          <ul></ul>
+         </div>
+         <div class="m_introBrands">
+          <h3>推荐品牌</h3>
+          <p class="txt"></p>
+         </div>
+        </div>
+       </div>
+       <script type="text/javascript">
+		void function(window, $){
+        	var item_html = [];
+        	$.each(hmpage0.child.category.child.household.data, function(i){
+        		if(i % 3 == 0) item_html.push('<p class="item-col">');
+        		item_html.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        		if((i+1) % 3 == 0){
+        			item_html.push('</p>');
+        			$('#m_house .item-colBox').append(item_html.join(''));
+        			item_html = [];
+        		}
+        	});
+        	var i = 0;
+        	$.each(hmpage0.child.category.child.household.child, function(){
+        		if(i > 4) return ;
+        		var html = ['<li class="subItem"><h3 class="subItem-hd">'+ this.name +'</h3><p class="subItem-col">'];
+        		$.each(this.data, function(){
+        			html.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        		});
+        		html.push('</p></li>');
+         		$('#m_house ' + (i < 2 ? '.m_subItemCon01' : '.m_subItemCon02')).append(html.join(''));
+         		i++;
+        	});
+        	$.each(hmpage0.child.category.child.household.child.brand_image.data, function(){
+        		$('#m_house .m_hotBrands ul').append('<li><a href="'+ this.cms_url +'" title="'+ this.title +'" target="_blank"><img src="'+ this.image_url +'" alt="'+ this.title +'"></a></li>');
+        	});
+        	$.each(hmpage0.child.category.child.household.child.brand_name.data, function(){
+        		$('#m_house .m_introBrands .txt').append('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        	});
+		}(this, jQuery);
+        </script>
+      </li>
+      <li id="m_sort_services" class="item m_category_item last">
+       <h3 class="item-hd"><a href="javascript:;" title="家装服务" class="ico_title">家装服务</a></h3>
+       <div class="item-colBox"></div>
+       <script type="text/javascript">
+		void function(window, $){
+        	var item_html = [];
+        	$.each(hmpage0.child.category.child.service.data, function(i){
+        		if(i % 2 == 0) item_html.push('<p class="item-col">');
+        		item_html.push('<a href="'+ this.cms_url +'" title="'+ this.brief +'" target="_blank">'+ this.brief +'</a>');
+        		if((i+1) % 2 == 0){
+        			item_html.push('</p>');
+        			$('#m_sort_services .item-colBox').append(item_html.join(''));
+        			item_html = [];
+        		}
+        	});
+		}(this, jQuery);
+        </script>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!--navbar start-->
+   <ul class="m_mainNav-main" id="Js_m_mainNav-main">
+    <li class="except"><a href="{$domain_www}" title="首页"><span>首页</span></a></li>
+   </ul>
+   <ul class="m_mainNav-others">
+    <li></li>
+   </ul>
+   <script type="text/javascript">
+		void function(window, $){
+		
+				//导航栏
+				$.each(hmpage0.child.navbar.data, function(){
+					$('#Js_m_mainNav-main').append('<li><a href="'+ this.cms_url +'" title="'+ this.brief +'"><span>'+ this.brief +'</span></a></li>');
+				});
+				$('.m_mainNav-others li').append('<a href="'+ hmpage0.child.navbar.child.bbs.data[0].cms_url +'" title="'+ hmpage0.child.navbar.child.bbs.data[0].brief +'">'+ hmpage0.child.navbar.child.bbs.data[0].brief +'</a>');
+				$('#Js_m_mainNav-main li').last().addClass('last cur');
+				$('#Js_m_mainNav-main li').hover(function(){
+						$(this).toggleClass('hover');
+				});
+				$('#Js_m_category').hover(function(){
+						$(this).addClass('m_category_hover');
+					},function(){
+						$(this).removeClass('m_category_hover');
+				});
+				//类目				
+				//类目窗口位置
+				var sid,soid,item_top,win_top,offset,is_open;
+				var nav_top = $('.m_mainNav').offset().top + $('.m_mainNav').height();
+				$('#Js_m_category .m_category_item').hover(
+					function(){
+						item_top = $(this).offset().top;//一级类目位置
+						win_top = $(window).scrollTop();//窗口位置
+						offset = win_top > nav_top ? win_top - item_top : - $(this).position().top;//偏移量
+						$(this).find('.m_sub_category').css('top', offset);
+						clearTimeout(sid);
+						if(is_open){
+							$(this).addClass('m_category_item_hover');
+						}else{
+							var that = this;
+							sid = setTimeout(function(){
+								$(that).addClass('m_category_item_hover');
+								is_open = true;
+							}, 300);
+						}
+					},function(){
+						$(this).removeClass('m_category_item_hover');
+				});
+				$('.m_category_bd').mouseleave(function(){
+					clearTimeout(sid);
+					is_open = false;
+				});
+		
+		}(this, jQuery)
+	</script>
+	   </div>
+ </div>
+ <!--floatNav end-->
+ 
+ 
+<div class="subNav" id="J_subNav">
+ <ul class="subNavItem subNavItem3">
+  <li id="itemsIndx" class="items itemsIndx {if $controller eq 'index' and $action neq 'zxh' }cur{/if}"><a href="{$domain_zixun}" title="装修汇首页" target="_blank">装修汇首页</a></i></li>
+  <li id="items0" class="items items0 {if $controller eq 'company'}cur{/if}"><a href="{$domain_company}" title="找装修" target="_blank">找装修</a><i class="hot_icon"></i></li>
+  <li id="items1" class="items items1 {if $controller eq 'designer'}cur{/if}"><a href="{$domain_sheji}" title="找设计" target="_blank">找设计</a></li>
+  <li id="items3" class="items items3 {if $action eq 'zxh'}cur{/if}" ><a href="{$domain_zxh}" title="装修攻略" target="_blank">装修攻略</a></li>
+  <li id="items2" class="items items2"><a href="{$domain_tu}" title="效果图" target="_blank">效果图</a></li>
+  <li id="items4" class="items items4 {if $controller eq 'news'}cur{/if}" ><a href="{$domain_hy}" title="行业资讯" target="_blank">行业资讯</a></li>
+  <li id="items6" class="items items6 {if $controller eq 'expert'}cur{/if}"><a target="_blank" href="{$domain_zixun}index.php?con=expert" title="专家在线">专家在线</a></li>
+ </ul>
+</div>
+
+</div>

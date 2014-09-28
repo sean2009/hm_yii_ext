@@ -1,0 +1,115 @@
+﻿<div class="m_footer">
+	<div class="ft_sevice">
+		<div class="promise">
+				<div class="foot_map"><a target="_blank" href="http://www.mmall.com/help/shangou_wuliu.html" title="查看配送城市" class="moreCity">查看配送城市&gt;&gt;</a></div>
+		</div>
+		<div class="guide">
+            <div class="slogan-services">
+            	<div class="slogan"><strong>网购家居，就上星易家</strong></div>
+                <dl class="ft_tel">
+                    <dt>客服电话：</dt>
+                    <dd>4000-213-213</dd>
+                </dl>
+            </div>
+			<dl>
+				<dt>购物指南</dt>	
+				<dd><a target="_blank" href="{$domain_www}help/guide.html#guideCol_1">如何注册</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/guide.html#guideCol_2">如何购物</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/guide.html#guideCol_3">如何报名活动</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/guide.html#guideCol_4">如何查看订单</a></dd>
+			</dl>
+			<dl>
+				<dt>如何支付</dt>
+				<dd><a target="_blank" href="{$domain_www}help/pay.html#payCol_1">支付宝支付</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/pay.html#payCol_2">银联快捷</a></dd>
+			</dl>
+			<dl>
+				<dt>配送方式</dt>
+				<dd><a target="_blank" href="{$domain_www}help/shangou_wuliu.html">服务介绍</a></dd>
+				<dd><a target="_blank" href="{$domain_www}service_list.html">配送价格</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a target="_blank" href="{$domain_www}help/oder.html">如何确认订单</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/cancel.html">如何退订</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/cash.html">如何提现</a></dd>
+				<dd><a target="_blank" href="{$domain_www}help/contact_service.html">如何联系客服</a></dd>
+			</dl>
+			<dl>
+				<dt>保障条例</dt>
+				<dd><a target="_blank" href="{$domain_www}help/ensure.html#anchor1">基础服务</a></dd>
+			</dl>
+			<dl>
+				<dt>商家支持</dt>
+				<dd><a target="_blank" href="{$domain_www}topic_mall/join-in.html">商家入驻</a></dd>
+				<dd><a target="_blank" href="{$domain_mai}">商家中心</a></dd>
+			</dl>
+		</div>
+		<div class="contant">
+			<dl class="otherLink">
+				<dt>官方平台</dt>
+				<dd><span class="weixin" title="星易家官方微信">星易家官方微信</span><span class="codeImg"></span></dd>
+				<dd><a class="weibo" target="_blank" href="http://e.weibo.com/mmallcom" title="红星美凯龙星易家">红星美凯龙星易家<i class="v"></i></a></dd>
+				<dd><a class="weixin" target="_blank" href="http://tg.mmall.com/group_buy.php?act=shenghuo" title="星易家微信生活圈">星易家微信生活圈</a></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="web_icp">
+		<p class="ft_nav"><a href="{$domain_www}help/about.html" title="关于我们" target="_blank">关于我们</a>|<a href="{$domain_www}help/shangjia.html" title="商务合作" target="_blank">商务合作</a>|<a href="{$domain_www}sitemap.html" title="网站地图" target="_blank">网站地图</a>|<a href="{$domain_www}help/friendshipLinks.html" title="友情链接" target="_blank">友情链接</a></p>
+		<p class="copyright">Copyright&copy;2012 红星美凯龙家居集团股份有限公司 版权所有</p>
+	</div>
+	<div class="ext">
+		<ul class="ext_list">
+			<li><a rel="nofollow" href="http://www.miibeian.gov.cn/" target="_blank"><img src="{$cssdomain1}/images/mall_v3/icp.jpg?{$cssversion}"></a></li>
+			<li><a rel="nofollow" href="http://sh.cyberpolice.cn/infoCategoryListAction.do?act=initjpg" target="_blank"><img src="{$cssdomain1}/images/mall_v3/110.jpg?{$cssversion}"></a></li>
+			<li><a rel="nofollow" href="http://www.zx110.org/" target="_blank"><img src="{$cssdomain1}/images/mall_v3/zx100.jpg?{$cssversion}"></a></li>
+			<li><a rel="nofollow" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=2012092720441277" target="_blank"><img src="{$cssdomain1}/images/mall_v3/sh-sgs.gif?{$cssversion}"></a></li>
+			<li><a rel="nofollow" href="https://ss.knet.cn/verifyseal.dll?sn=e12071331010031767307708&amp;ct=df&amp;a=1&amp;pa=156926" target="_blank" id="ss_knet_cn" onclick="CNNIC_change('ss_knet_cn')"><img src="{$cssdomain1}/images/mall_v3/kexin.jpg?{$cssversion}"></a></li>
+		</ul>
+		<script type="text/JavaScript">function CNNIC_change(eleId){var str= document.getElementById(eleId).href;var str1 =str.substring(0,(str.length-6));str1+=CNNIC_RndNum(6); document.getElementById(eleId).href=str1;}function CNNIC_RndNum(k){var rnd=""; for (var i=0;i < k;i++) rnd+=Math.floor(Math.random()*10); return rnd;}</script>
+	</div>
+</div>
+<script type="text/javascript">
+	void function(window, $){
+		window._ozuid = $.cookie("ECS[login_name]") || '';	
+	}(this, jQuery);
+</script>
+<script type="text/javascript" src="http://js01.homemall.com.cn/js/99click/o_code.js?201301171215"></script>
+<script type="text/javascript">
+	var _mvq = _mvq || [];
+    _mvq.push(['$setAccount', 'm-20207-3']);
+    _mvq.push(['$logConversion']);
+</script>
+<script type="text/javascript" src="http://static.mediav.com/mvl.js"></script>
+<script type='text/javascript'>
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-000726-41AFE7/gs.js';
+        var    firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+    })();
+</script>
+
+<script type="text/javascript">
+{if $HTTP_HOST eq 'zhuangxiu.mmall.com'}
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0bead37082ff97315d9a4fac8c4fa344' type='text/javascript'%3E%3C/script%3E"));
+{elseif $HTTP_HOST eq 'sheji.mmall.com'}
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F84595af04b8a218667c92bf48f9ee339' type='text/javascript'%3E%3C/script%3E"));
+{elseif $HTTP_HOST eq 'hui.mmall.com'}
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F13963eb52a381093cd54204eb19fde35' type='text/javascript'%3E%3C/script%3E"));
+{elseif $HTTP_HOST eq 'hangye.mmall.com'}
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F33f33e053baae8f088917ea10b55dace' type='text/javascript'%3E%3C/script%3E"));
+{/if}
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F27253c107ec1709a83f8c4a7862f6c51' type='text/javascript'%3E%3C/script%3E"));
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fffbfb19e2a0ddb32c980773d2e851554' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

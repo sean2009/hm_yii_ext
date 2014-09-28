@@ -1,0 +1,174 @@
+﻿<!doctype html>
+<html lang="zh-cn">
+<head>
+<title>红星美凯龙星易家&amp;太平洋家居网 设计帮第二期 星易家设计师来帮忙</title>
+<meta name="keywords" content="免费设计,装修公司,装修效果图,设计师,设计师大赛,红星美凯龙星易家,太平洋家居网"/>
+<meta name="description" content="红星美凯龙星易家与太平洋家居网强强联合，挑选30位精英设计师为您免费设计！现在预约还能拿奖！" />
+<meta property="qc:admins" content="15535460516551446375" />
+<meta property="wb:webmaster" content="e70aa9edb6c2ce88" />
+<meta http-equiv="window-target" content="_top" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="content-language" content="zh-cn"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="xcode-display" content="render" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=high-dpi" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="MSThemeCompatible" content="no" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="search" type="application/opensearchdescription+xml" href="" title="" />
+<link rel="icon" href="{$cssdomain2}/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="{$cssdomain2}/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{$cssdomain2}/favicon_ipad.png" type="image/png" />
+<link rel="apple-touch-icon-precomposed" href="{$cssdomain2}/favicon_ipad.png" type="image/png" />
+<link rel="canonical" href="" />
+<style type="text/css">
+    @import url({$cssdomain1}/css/global/reset.css?{$cssversion});
+	@import url({$cssdomain2}/css/global/base.css?{$cssversion});
+</style>
+<script type="text/javascript" src="{$cssdomain1}/js/public.js?{$jsversion}"></script>
+<script type="text/javascript">
+	void function(window,$){
+		try{
+
+			//设置公共变量 begin
+			window.config = {
+				dataJsVersion: Math.ceil({$nowtime} / 30)
+			};
+			//设置公共变量 end
+
+		}
+		catch(e){
+
+		}
+	}(this,jQuery);
+</script>
+<link type="text/css" rel="stylesheet" href="{$cssdomain1}/css/skins/info_v2/layout.css?{$cssversion}" />
+</head>
+<body>
+<div id="header">
+<div id="user">
+    <div class="clearfix" id="user_body">
+		<div class="quick_area">
+			<a href="http://www.mmall.com/" title="红星美凯龙·星易家" target="_blank">红星美凯龙·星易家</a>
+			<a href="http://zixun.mmall.com/" target="_blank" title="资讯首页">资讯首页</a>
+		</div>
+	  <ul class="user_inf clearfix">
+		<li class="welcome" id="welcome_login" style="display:none">
+            您好，<a href="{$domain_user}user.php"><span title="" id="welcome_username"></span></a>&nbsp;&nbsp;
+            <a href="{$domain_user}passport.php?act=logout">注销</a>
+		</li>
+        <li class="welcome" id="welcome_nologin">
+			<span>您好，欢迎来到星易家</span>
+                <a href="javascript:location='{$domain_user}passport.php?act=login&back_act=' + encodeURIComponent(location)">[登录]</a>
+           	 	<a href="javascript:location='{$domain_user}passport.php?act=register&back_act=' + encodeURIComponent(location)">[免费注册]</a>
+		</li>
+		<li class="line">|</li>
+		<li id="myRedStar" class="top_showmore myRedStar"> 
+	     	   <a id="login_myuser" style="display:none" href="{$domain_user}user.php" class="drop">我的星易家</a>
+		       <a id="nologin_myuser" href="{$domain_user}passport.php?act=login&back_act={$domain_user|eascape:url}user.php" class="drop">我的星易家</a>
+			<div id="myRSlist" class="list"> 
+				<span class="blank"></span>
+				<div class="list_body">
+					<a id="login_order" style="display:none" href="{$domain_user}index.php?con=MallOrder&act=Index">我的订单</a>
+					<a id="nologin_order" href="javascript:location='{$domain_user}passport.php?act=login&back_act=' + encodeURIComponent('{$domain_user}index.php?con=MallOrder&act=Index')">我的订单</a>
+				</div>
+			</div>
+		  </li>
+		  <li class="line">|</li>
+		  <li class="cart_c">
+			<span class="cart">
+				<a id="login_cart" style="display:none" href="{$domain_user}cart.html">购物车<em id="cartnum"></em></a>
+				<a id="nologin_cart" href="{$domain_user}passport.php?act=login&back_act={$domain_user}cart.html">购物车<em id="cartnum"></em></a>
+			</span>
+		  </li>
+		  <li class="line">|</li>
+		  <li class="top_showmore help_c"><a class="drop" href="javascript:;">帮助中心</a>
+			<div class="list">
+				<span class="blank"></span>
+				<div class="list_body">
+					<a href="{$domain_www}help/liucheng.html">购物流程</a>
+           			<a href="{$domain_www}help/contact_service.html">联系客服</a>
+				</div>
+			</div>
+		  </li>
+		  <li class="line">|</li>
+		  <li class="top_showmore sitenav_c">
+		  	<a class="drop" href="{$domain_www}sitemap.html">网站导航</a>
+		  </li>
+		  <li class="line">|</li>
+		  <li class="hotline_c"><strong>4000-213-213</strong></li>
+	  </ul>
+    </div>
+ </div>
+ <input type="hidden" name="hidden_login_user_name" id="hidden_login_user_name" value="">
+ <script type="text/javascript" defer async>
+	void function(window, $){
+		$(".top_showmore").hover(function(){
+			$(this).find(".list").show();
+		},function(){
+			$(this).find(".list").hide();
+		});
+		
+		$.getJSON('index.php?con=user&act=index&t='+Math.random(),function(data){
+			if(data.status == 1){
+				$('#welcome_login').show();
+				$('#welcome_username').text(data.username);
+				$('#hidden_login_user_name').val(data.username);
+				$('#welcome_nologin').remove();
+				$('#login_myuser').show();
+				$('#nologin_myuser').remove();
+				$('#login_order').show();
+				$('#nologin_order').remove();
+				$('#login_cart').show();
+				$('#nologin_cart').remove();
+				
+				$.ajax({url:'{$domain_user}index.php?con=cartadd&act=count&t='+Math.random(),
+					dataType:"jsonp",
+					success:function(data){
+					data &&	$("#cartnum").html("["+data+"]");
+					}
+				});
+			}
+		});
+		
+		
+		
+		$("#myRedStar").hover(function(){
+			$("#myRSlist").show();
+		},function(){
+			$("#myRSlist").hide();
+		});
+		$("#close").click(function(){
+			$("#cartTip").hide();
+		});
+		
+	}(this, jQuery);
+	
+	function SetHome(obj){
+		var vrl = window.location;
+        try{
+                obj.style.behavior='url(#default#homepage)';obj.setHomePage(vrl);
+        }
+        catch(e){
+                if(window.netscape) {
+                        try {
+                                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                        }
+                        catch (e) {
+								alert("此操作被浏览器拒绝！请在浏览器地址栏输入 about:config  并回车 \n 然后将 [signed.applets.codebase_principal_support]的值设置为 true, 双击即可");
+                        }
+                        var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                        prefs.setCharPref('browser.startup.homepage',vrl);
+                 }else{
+                 	alert('抱歉, 您的浏览器无法完成此操作！\n请手动将 http://www.mmall.com/ 设为首页');
+                 }
+		}
+	}
+ </script>
+ </div>
+ <!--user end-->
